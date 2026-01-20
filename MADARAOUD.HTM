@@ -1,75 +1,0 @@
-<!DOCTYPE html>
-<html lang="ar" dir="rtl">
-<head>
-  <meta charset="UTF-8">
-  <title>أغاني مادارا</title>
-  <link rel="stylesheet" href="MADARA.CSS">
-</head>
-<body>
-
-  <!-- الهيدر -->
-  <header>
-    <div class="logo">🩸 Madara Legacy</div>
-    <nav>
-      <ul>
-        <li><a href="MADARA.HTM">الرئيسية</a></li>
-        <li><a href="MADARAPHTOT.HTM">الصور</a></li>
-        <li><a href="MADARAOUD.HTM">الأغاني</a></li>
-        <li><a href="MADARAVIDUO.htm">الفيديوهات</a></li>
-        <li><a href="madarastory.htm">القصص</a></li>
-        <li><a href="forum.htm">المنتدى</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <!-- قسم الأغاني -->
-  <section class="music fade-in">
-    <h2>🎵 أغاني مادارا</h2>
-
-    <div class="track">
-      <h3>Madara Hindi Rap - Maut Ka Naach</h3>
-      <p>راب قوي يعكس شخصية مادارا القتالية</p>
-      <audio controls >
-        <source src="madara_view/MADARA RAP _ _DEATH_ _ RUSTAGE ft. SHOFU & JHBBOSS [NARUTO].mp3" type="audio/mp3 ">
-        المتصفح لا يدعم تشغيل الصوت.
-      </audio>
-    </div>
-
-    <div class="track">
-      <h3>Madara Uchiha Theme - Epic Version</h3>
-      <p>موسيقى ملحمية تعزز جو القوة والغموض</p>
-      <audio controls>
-        <source src="madara_view/Madara Rap _ _Awakened_ _ Daddyphatsnaps [Naruto] ft. Shwabadi.mp3" type="audio/mp3">
-        المتصفح لا يدعم تشغيل الصوت.
-      </audio>
-    </div>
-
-    <div class="track">
-      <h3>Naruto OST - Madara's Theme</h3>
-      <p>الموسيقى الرسمية من أنمي ناروتو شيبودن</p>
-      <audio controls>
-        <source src="madara_view/Kurama Rap Song _ _Nine Tails_ _ SHWABADI [Naruto].mp3" type="audio/mp3 " >
-        المتصفح لا يدعم تشغيل الصوت.
-      </audio>
-    </div>
-  </section>
-
-  <!-- التذييل -->
-  <footer>
-    <p>© 2025 Madara Legacy. جميع الحقوق محفوظة.</p>
-  </footer>
-
-  <!-- تأثيرات التمرير -->
-  <script>
-    window.addEventListener('scroll', () => {
-      document.querySelectorAll('.fade-in').forEach(el => {
-        const rect = el.getBoundingClientRect();
-        if (rect.top < window.innerHeight - 100) {
-          el.classList.add('visible');
-        }
-      });
-    });
-  </script>
-
-</body>
-</html>
