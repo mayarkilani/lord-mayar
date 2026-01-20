@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>فيديوهات مادارا</title>
+  <link rel="stylesheet" href="MADARA.css">
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header>
+    <div class="logo">🩸 Madara Legacy</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="MADARAPHTOT.html">الصور</a></li>
+        <li><a href="MADARAOUD.html">الأغاني</a></li>
+        <li><a href="MADARAVIDUO.html">الفيديوهات</a></li>
+        <li><a href="madarastory.html">القصص</a></li>
+        <li><a href="forum.html">المنتدى</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- قسم الفيديوهات -->
+  <section class="videos fade-in">
+    <h2>🎬 فيديوهات مادارا</h2>
+
+    <div class="video-box">
+      <h3>Madara vs Shinobi Alliance</h3>
+      <p>مشهد قتالي أيقوني يُظهر قوته الخارقة</p>
+      <iframe width="100%" height="315" src="madara_view/Shwabadi - MADARA! ft. JZBEL __ Naruto_ Shippuden Rap.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-box">
+      <h3>Hashirama vs Madara</h3>
+      <p>معركته مع خصمه الأبدي هاشيراما سينجو</p>
+      <iframe width="100%" height="315" src="madara_view/uicideboy - AUDUBON WEST END Madara AMV スサノオ.mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div class="video-box">
+      <h3>Hashirama vs Madara</h3>
+      <p>معركته مع خصمه الأبدي هاشيراما سينجو</p>
+      <iframe width="100%" height="315" src="madara_view/MADARA RAP God Mode RUSTAGE [Naruto Rap].mp4" frameborder="0" allowfullscreen></iframe>
+    </div>
+
+    <div class="video-box">
+      <h3>The Philosophy of Madara Uchiha</h3>
+      <p>تحليل عميق لفلسفته حول السلام والسيطرة</p>
+      <iframe width="100%" height="315" src="https://www.youtube.com/embed/8_FenWC9Bc4" frameborder="0" allowfullscreen></iframe>
+    </div>
+  </section>
+
+  <!-- التذييل -->
+  <footer>
+    <p>© 2025 Madara Legacy. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <!-- تأثيرات التمرير -->
+  <script>
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>

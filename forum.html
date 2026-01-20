@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>منتدى مادارا</title>
+  <link rel="stylesheet" href="MADARA.css">
+</head>
+<body>
+
+  <!-- الهيدر -->
+  <header>
+    <div class="logo">🩸 Madara Legacy</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="MADARAPHTOT.html">الصور</a></li>
+        <li><a href="MADARAOUD.html">الأغاني</a></li>
+        <li><a href="MADARAVIDUO.html">الفيديوهات</a></li>
+        <li><a href="madarastory.html">القصص</a></li>
+        <li><a href="forum.html">المنتدى</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- قسم المنتدى -->
+  <section class="forum fade-in">
+    <h2>💬 منتدى عشاق مادارا</h2>
+
+    <!-- نموذج التعليق -->
+    <form id="commentForm">
+      <input type="text" id="username" placeholder="اسمك" required>
+      <textarea id="comment" placeholder="اكتب تعليقك هنا..." required></textarea>
+      <button type="submit">نشر التعليق</button>
+    </form>
+
+    <!-- قائمة التعليقات -->
+    <div id="commentsList">
+      <!-- التعليقات تظهر هنا -->
+    </div>
+  </section>
+
+  <!-- التذييل -->
+  <footer>
+    <p>© 2025 Madara Legacy. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <!-- تأثيرات التمرير -->
+  <script>
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.fade-in').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+
+    // إضافة تعليق ديناميكي
+    const form = document.getElementById('commentForm');
+    const commentsList = document.getElementById('commentsList');
+
+    form.addEventListener('submit', function(e) {
+      e.preventDefault();
+      const name = document.getElementById('username').value;
+      const text = document.getElementById('comment').value;
+
+      const commentBox = document.createElement('div');
+      commentBox.className = 'comment-box';
+      commentBox.innerHTML = `<strong>${name}</strong><p>${text}</p>`;
+
+      commentsList.prepend(commentBox);
+      form.reset();
+    });
+  </script>
+
+</body>
+</html>

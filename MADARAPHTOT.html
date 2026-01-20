@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <title>صور مادارا</title>
+  <link rel="stylesheet" href="MADARA.css">
+</head>
+<body>
+
+  <header>
+    <div class="logo">🩸 Madara Legacy</div>
+    <nav>
+      <ul>
+        <li><a href="index.html">الرئيسية</a></li>
+        <li><a href="MADARAPHTOT.html">الصور</a></li>
+        <li><a href="MADARAOUD.html">الأغاني</a></li>
+        <li><a href="MADARAVIDUO.html">الفيديوهات</a></li>
+        <li><a href="madarastory.html">القصص</a></li>
+        <li><a href="forum.html">المنتدى</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="gallery fade-in">
+    <h2>معرض صور مادارا</h2>
+    <div class="images">
+      <img src="madara_view/734134.jpg" alt="Madara 1">
+      <img src="madara_view/naruto-madara-uchiha-with-red-glowing-eyes-desktop-wallpaper-cover.jpg" alt="Madara 2">
+      <img src="madara_view/img1.jpeg.jpg" alt="Madara 3">
+      <!-- أضف المزيد حسب الحاجة -->
+    </div>
+  </section>
+
+  <footer>
+    <p>© 2025 Madara Legacy. جميع الحقوق محفوظة.</p>
+  </footer>
+
+  <script>
+    window.addEventListener('scroll', () => {
+      document.querySelectorAll('.fade-in, .images img').forEach(el => {
+        const rect = el.getBoundingClientRect();
+        if (rect.top < window.innerHeight - 100) {
+          el.classList.add('visible');
+        }
+      });
+    });
+  </script>
+
+</body>
+</html>
